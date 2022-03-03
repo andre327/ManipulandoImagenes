@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+   
+}
+#main{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 400px;
+    grid-template-areas: 
+    "a a"
+    "b b";
+    justify-self: center;
+}
+.container{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.425);
+    width: 450px;
+    height: 600px;
+}
+.cont-1{
+    grid-area: a;
+}
+.texto{
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 250px 200px;
+    
+}
+.subtotal{
+    margin-left: 1em;
+    font-family: 'Roboto';
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.sub div{
+    width: 90%;
+    height: 40px;
+    background: yellow;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.sub div p{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    line-height: 2.7em;
+    font-family: 'Roboto';
+}
+.Img img{
+    width: 150px;
+    margin-left: 1.5em;
+    border: 1px rgb(189, 189, 189) solid;
+}
+.textprod{
+    width: 250px;
+}
+.textprod p{
+    font-family: 'Roboto';
+}
+.textprod p:first-child{
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.textprod p:nth-child(2){
+    
+    margin-bottom: 0.5em;
+}
+.textprod p:nth-child(3){
+     font-size: 0.9em;
+ 
+    margin-bottom: 0.2em;
+    line-height: 1.5em;
+}
+.textprod p:nth-child(4){
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-bottom: 0.5em;
+
+}
+.textprod p:nth-child(5){
+    font-family: 'Roboto';
+    margin-bottom: 1em;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 180px;
+    border: rgb(211, 211, 211)1.2px solid;
+    border-radius: 10px;
+    margin-left: 1.5em;
+
+}
+.botones input{
+    outline: none;
+    width: 60px;
+    height: 40px;
+    background: rgb(231, 231, 231);
+    color: rgb(117, 117, 117);
+    border: none;
+    cursor: pointer;
+
+}
+
+.botones input:nth-child(1){
+    border-right: rgb(211, 211, 211) 1.2px solid;
+    border-radius: 9px 0 0 9px;
+    font-size: 1.6em;
+
+}
+.botones input:nth-child(3){
+    border-left: rgb(211, 211, 211) 1.2px solid;
+    border-radius: 0 9px 9px 0;
+    font-size: 1.5em;
+}
+.botones input:hover{
+    background: rgb(197, 197, 197);
+}
+.botones div{
+    width: 60px;
+    height: 38px;
+    text-align: center;
+    line-height: 2.5em;
+}
+.bottombotones2{
+    grid-column-start: 2;
+    grid-template-rows: 2;
+}
+.botones2{
+    margin-left: 2em;
+}
+.botones2 input{
+font-family: 'Roboto';
+font-size: 0.9em;
+text-align: left;
+padding-left: 0.5em;
+height: 40px;
+border-radius: 6px;
+background: white;
+border: rgb(211, 211, 211)1.2px solid;
+cursor: pointer;
+
+}
+.botones2 input:first-child{
+    width: 120px;
+    margin-bottom: 1em;
+}
+.botones2 input:nth-child(2){
+    width: 180px;
+    margin-bottom: 0.5em;
+}
+.botones2 input:hover{
+    background: rgb(226, 226, 226);
+}
