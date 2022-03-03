@@ -4,45 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/manipular_imagenes.css">
-    <link rel="stylesheet" href="CarritoCompra.html">
-    <script src="js/manipular_imagenes.js"></script>
-    <title>Manipular Imagenes</title>
+    <link rel="stylesheet" href="css/CarritoCompra.css">
+    <title>Carrito de Compra</title>
 </head>
 <body>
-    <!--1.cargar una imagen y que al pasar el mause por encima de la imagen me genere un mensaje de alerta 
-    2.que la imagen tenga un id y utilizar el evento onmeuseiver
-    3.llamar la funcion desde html
-    4.en la funcion ejecutar un alert-->
-
-
-<div><img src="img/1917.png" id="primera" class="imgprincipal" ></div>
-
-<div id="fotos">
-    <img src="img/2.jpg" id="primera" onmouseover="cambiarImagen('primera','img/740x500.jpg');" alt="it">
-    <img src="img/3.jpg" id="a-dos-metros" onmouseover="cambiarImagen('primera','img/740x500dos.jpg');" alt="a-dos-metros">
-    <img src="img/1917.330x500.jpg" id="1917-pequeña" onmouseover="cambiarImagen('primera','img/1917.png');" alt="it">
-    <img src="img/a travez330x500jpg.jpg" id="1917-pequeña" onmouseover="cambiarImagen('primera','img/atravez 740x532.jpg');" alt=" travez">
-
-</div>
-
-
-
-
-
-
-
-<!--
-<div>
-    <img src="img/2.jpg" id="primera" onmouseover="segunda2();">
-</div>
-<div>
-    <img src="img/3.jpg" onmouseover="cambiarImagen();"
- alt="peliculas" onmouseleave="retornarImagen();" >
-    <img src="img/2.jpg" id="siguiente" alt="">
-</div>
-
--->
-
+   
+<div class="main">
+    <div class="container">
+       <div class="cont-1">          
+           <div class="subtotal"><p>SubTotal <span> <b>cop</span><span id="sub"></span> <b id="valorSubtotal">0</b></b></p></div>   
+    <a class="sub"><label class="text"><div><p>Proceder al pago(<span id="total">0</span>productos)</p></label></div></a> 
+    </div>
+   <div class="texto">
+       <div class="Img"><img src="img/img-java.PNG" alt=""></div>
+       <div class="textprod"><p>JavaScript The Definitive Guide   </p>
+         <p> Master the World's Most-Used</p> 
+        <p> Programing Languaje</p>  
+       </p>
+       <p>por Andrea Figueroa</p>
+       <b>Tapa Blanda</b><br><br>
+       <p><b>cop <span class="sp2">112.350</span></b></p>
+   </div>
+      
+  <div class="botones">
+            <input id="`disminuir`" onclick="disminuir()" value="-">
+            <input  id="cantidad" value="0" type="text">
+            <input id="`aumentar`" onclick="aumentar()" value="+">
+   </div>
+        <div class="botones2">
+            <input id="" type="button" onclick="eliminatProducto();" value="Eliminar">
+            <input id="" type="button" onclick="guardarProducto();" value="Guardar para mas tarde">
+    </div>
+    
+    
+        </div>
+   
+           </div>
+   </div>
+    <script src="js/CarritoCompra.js"></script>
 </body>
 </html>
