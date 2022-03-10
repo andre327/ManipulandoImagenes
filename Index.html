@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/tabla.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="manipulacion.html"></a>
-    <link rel="stylesheet" href="css/CarritoCompra.css">
-    <title>Carrito de Compra</title>
+    <title>Formulario</title>
 </head>
 <body>
-   
-<div class="main">
-    <div class="container">
-       <div class="cont-1">          
-           <div class="subtotal"><p>SubTotal <span> <b>cop</span><span id="sub"></span> <b id="valorSubtotal">0</b></b></p></div>   
-    <a class="sub"><label class="text"><div><p>Proceder al pago(<span id="total">0</span>productos)</p></label></div></a> 
-    </div>
-   <div class="texto">
-       <div class="Img"><img src="img/img-java.PNG" alt=""></div>
-       <div class="textprod"><p>JavaScript The Definitive Guide   </p>
-         <p> Master the World's Most-Used</p> 
-        <p> Programing Languaje</p>  
-       </p>
-       <p>por Andrea Figueroa</p>
-       <b>Tapa Blanda</b><br><br>
-       <p><b>cop <span class="sp2">112.350</span></b></p>
-   </div>
-      
-  <div class="botones">
-            <input id="`disminuir`" onclick="disminuir()" value="-">
-            <input  id="cantidad" value="0" type="text">
-            <input id="`aumentar`" onclick="aumentar()" value="+">
-   </div>
-        <div class="botones2">
-            <input id="" type="button" onclick="eliminatProducto();" value="Eliminar">
-            <input id="" type="button" onclick="guardarProducto();" value="Guardar para mas tarde">
-    </div>
-    
-    
-        </div>
-   
+    <body>
+        <div class="bot" >
+            <h2 class="titulo">Registro de Productos</h2>
+            <div class="codigo">Código del Producto </div>
+             <div> 
+              <input class="segcodigo" type="text" id="codigo">
+              </div>
+             <div class="descripcion">Descripción </div>
+           <div> 
+          <input class="segdescripcion" type="text" id="descripcion">
+          </div>
+            <div class="valor">Valor Unitario </div>
+          <div>
+         <input class="segvalor" type="text" id="valor"> 
+          </div>
+           <div class="unid">Unidades en Stock </div>
+           <div>
+                <input class="segunidades" type="text" id="stock">
            </div>
-   </div>
-    <script src="js/CarritoCompra.js"></script>
-</body>
+       
+           <div class="botonCargar">
+             <button class="boton" onclick="registrar();">Cargar Producto</button>
+           </div>
+        </div> 
+    <div id="tables-js"></div>
+    </body> 
+
 </html>
+<script src="./Js/tabla.js"></script>

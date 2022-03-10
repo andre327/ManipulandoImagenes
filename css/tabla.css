@@ -1,0 +1,104 @@
+h2{
+    font-size: 2 rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+ .bot{  
+    border: solid 2px ;
+    border-radius: 5px;
+    padding: calc(90% -10%);
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+   
+    grid-template-areas: 
+    'titulo         titulo           titulo            titulo'
+    'codigo         segcodigo        segcodigo         segcodigo'
+    'descripcion    segdescripcion   segdescripcion    segdescripcion'
+    'valor          segvalor         segvalor          segvalor'
+    'unid           segunidades      segunidades       segunidades'
+    'boton          boton            boton             boton'/
+    1fr             2fr                1fr            2fr
+    ;
+}
+.bot > div{
+  
+    align-items: center;
+}
+.bot > div > input{
+    height: 2em;
+    padding: 3px 5px;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+.codigo{
+    grid-area: codigo;
+    
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.valor{
+    grid-area: valor;
+}
+.unid{
+    grid-area: unid;
+}
+.boton{
+ display: flex;
+ justify-content: center;
+ width: 353%;
+ margin-top: 1rem;
+ margin-right: auto;
+ margin-left: auto;
+ background-color: rgb(25, 173, 192);
+
+}
+.segcodigo{
+    grid-area:segcodigo;
+    width: 85%;
+    padding: 7px;
+}
+.segdescripcion{
+    grid-area:segdescripcion;
+    width: 85%;
+    padding: 7px;  
+}
+.segvalor{
+    grid-area:segvalor;
+    width:85%;
+    padding: 7px;
+}
+.segunidades{
+    grid-area:segunidades;
+    width: 85%;
+    padding: 7px;
+}
+.botonCargar {
+    grid-area: boton;
+  
+}
+.boton{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ margin-top: 1rem;
+ margin-right: auto;
+ margin-left: auto;
+ background-color: rgb(25, 173, 192);
+ padding: 6px 5px;
+
+}
+.tabla2 th {
+    background: rgb(25, 173, 192);
+    color: black;
+    margin: 150px auto;
+    width: 200px;
+    border: 1px solid black;
+}
+.tabla2 td{
+    border: 1px solid black;
+}
