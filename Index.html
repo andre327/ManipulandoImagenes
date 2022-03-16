@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/tabla.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Mercado Libre</title>
+    <link rel="stylesheet" href="css/mercado.css">
+    <link rel="stylesheet" href="Fonts e Iconos/icons/all.css">
 </head>
 <body>
-    <body>
-        <div class="bot" >
-            <h2 class="titulo">Registro de Productos</h2>
-            <div class="codigo">Código del Producto </div>
-             <div> 
-              <input class="segcodigo" type="text" id="codigo">
-              </div>
-             <div class="descripcion">Descripción </div>
-           <div> 
-          <input class="segdescripcion" type="text" id="descripcion">
-          </div>
-            <div class="valor">Valor Unitario </div>
-          <div>
-         <input class="segvalor" type="text" id="valor"> 
-          </div>
-           <div class="unid">Unidades en Stock </div>
-           <div>
-                <input class="segunidades" type="text" id="stock">
-           </div>
-       
-           <div class="botonCargar">
-             <button class="boton" onclick="registrar();">Cargar Producto</button>
-           </div>
-        </div> 
-    <div id="tables-js"></div>
-    </body> 
-
+    
+    <div class="encabezado">
+        <label class="icono-barra">&#9776</label>
+        <input type="text" name="" id="textoBusqueda">
+        <label class="icon-location-shopping">&#9776</label>
+    </div>
+    
+    <div id="main-content"></div>
+    <script src="js/mercado.js"></script>
+</body>
 </html>
-<script src="./js/tabla.js"></script>

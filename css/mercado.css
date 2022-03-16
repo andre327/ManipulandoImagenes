@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.encabezado {
+    display: grid;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(248, 221, 67, 0.864);
+    font-family: roboto, sans-serif;
+    grid-template: "icono-barra busqueda icono-carrito" / 
+                    1fr 7fr 1fr;
+}
+.icono-barra {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+.busqueda {
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    height: 32px;
+    display: block;
+    margin: 15px auto 0 auto;
+    font-family: roboto, sans-serif;
+  
+}
+.icon-location-shopping
+{
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: right;
+    color: rgb(24,24,24,.9);
+    cursor: pointer;
+    
+}
+input[type="text"] {
+    background-color: white;
+    border-radius: 30px;
+    width: 95%;
+    height: 32px;
+    display: block;
+    margin: 15px auto 0 auto;
+    border: 0;
+    outline: none;
+    padding-left: 20px;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    color: rgb(48,48,48,.8);
+}
+
+ 
+.estilo-contentImg {
+    font-family: lato, sans-serif;
+    display: grid;
+    padding: 20px;
+    box-sizing:border-box;
+    border-bottom: 1px solid rgb(48,48,48,.2); 
+    grid-template: "img-car descripcion" 25px 
+                   "img-car precio" 25px 
+                    "img-car kilometros" 25px
+                    "img-car empty" auto /
+                     4fr       15fr;
+}
+.estilo-precio {
+    font-family: lato, sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-left: 17px;
+    color: rgba(24,24,24,.9);
+}
+.img-estilo {
+    width: 100%;
+    grid-area: img-car;
+}
+
+.estilo-anyo {
+    font-size: 1em;
+    margin-left: 17px;
+    display: block;
+}
+.estilo-descripcion {
+    display: block;
+    margin-left: 17px;
+  
+}
+.estilo-kilometraje {
+    padding-top: 10px;
+    margin-left: 17px;
+    font-size: 0.9em;
+    font-family: lato, sans-serif;
+}
